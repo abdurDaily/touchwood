@@ -2,6 +2,8 @@ import React from 'react';
 import '../css/nav.css';
 import { CiSearch } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
     return (
@@ -12,28 +14,30 @@ const Navbar = () => {
                     <a className="navbar-brand" href="#">
                         <img style={{ maxHeight: '28.293963254593173px',maxWidth: '220px' }} src="public/images/e-com-logo.avif" alt="" />
                     </a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
+                    <button style={{ backgroundColor:"transparent", border:'none' }} className='mobile-bar d-lg-none' data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <span  style={{ color:"#FFF", fontSize:"20px" }}><FaBarsStaggered /></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav m-auto  mb-lg-0">
-                        <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="#">Products</a>
+                        <li className="nav-item parent_item">
+                        <a className="nav-link" aria-current="page" href="#">Products <span><IoIosArrowDown /></span> </a>
+
+                           <ul className='sub_menu'>
+                              <li><a href="">Seating</a></li>
+                              <li><a href="">Desks</a></li>
+                              <li><a href="">DIY</a></li>
+                              <li><a href="">Storage</a></li>
+                           </ul>
+
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="#">Articles</a>
                         </li>
-                        <li className="nav-item dropdown">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Our Story
-                        </a>
-                        <ul className="dropdown-menu">
-                            <li><a className="dropdown-item" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><hr className="dropdown-divider"/></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                        
+                        <li className="nav-item">
+                        <a className="nav-link" href="#"> Our Story</a>
                         </li>
+                        
                         <li className="nav-item">
                         <a className="nav-link">Contact</a>
                         </li>
@@ -47,6 +51,22 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+
+
+
+      
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    ...
+                </div>
+            </div>
+
+            
         </>
     );
 };

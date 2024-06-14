@@ -3,6 +3,8 @@ import '../css/style.css';
 
 const Hero = () => {
     return (
+        <>
+
         <section id="hero">
               <video loop  autoplay="autoplay" muted  type="video/mp4" src="https://cdn.shopify.com/videos/c/o/v/8521d40d020d456591b58d8c5ba59079.mp4"></video>
 
@@ -14,7 +16,17 @@ const Hero = () => {
                      </div>
                  </div>
               </div>
+              
         </section>
+
+
+        
+
+        
+       </>
+
+
+
     );
 };
 
