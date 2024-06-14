@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+@font-face {
+    font-family: "Neuzeit Office";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("public/fonts/neuzeitoffice_n4.ae7f155182babff68f1ef962040edcc74cbc0239.woff2") format("woff2"),
+         url("//www.touchwood.store/cdn/fonts/neuzeit_office/neuzeitoffice_n4.d928145105c25df05cd26a4f8c81aff1e65bd4fe.woff?h1=dG91Y2h3b29kLWJhbmdsYWRlc2guYWNjb3VudC5teXNob3BpZnkuY29t&h2=dG91Y2h3b29kLnN0b3Jl&h3=YWNjb3VudC50b3VjaHdvb2Quc3RvcmU&h4=dG91Y2h3b29kYmQuY29t&hmac=a0bf2cd08bafee3a21b19c90e6063b98aabc66ecc9a96dbd652820b1877d1d32") format("woff");
+  }
+
+
+body{
+  font-family: "Neuzeit Office";
+}
