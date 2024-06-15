@@ -1,6 +1,6 @@
-/* =============== NAV CSS START ====================*/
-
-/* =============== NAV CSS END ======================*/
+html{
+   font-size: 10px;
+}
 /* =============== HERO CSS START ====================*/
 #hero{
    height: 650px;
@@ -27,7 +27,7 @@
    position: relative;
 }
 #hero .container h1{
-   font-size: 80px;
+   font-size: 8rem;
    font-family: "Chivo", sans-serif;
    color: #fff;
    font-weight: 700;
@@ -36,7 +36,36 @@
 #hero .container p{
    font-family: "Chivo", sans-serif;
    color: #fff;
-   letter-spacing: 5px;
+   font-family: sans-serif !important;
+   letter-spacing: 3.77px;
+   line-height: 3rem;
+   font-size: 1.8rem;
+   font-weight: 300;
+
+}
+#hero button{
+   margin-top: 10px;
+   padding: 11px 20px;
+   font-weight: bold;
+   display: inline-block;
+   background: transparent;
+   border: 1px solid #fff;
+   color: #fff;
+   font-size: 1.6rem;
+   text-transform: capitalize;
+   /* transition: 0.3s; */
+}
+#hero button:hover{
+   background-color: #fff;
+   color: #333;
+   padding: 11px 30px;
+}
+#hero .arrow{
+   display: none;
+   padding-left: 10px;
+}
+#hero button:hover .arrow{
+   display: inline-block;
 }
 @media (max-width: 1140px) { 
    #hero{

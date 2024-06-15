@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoBagOutline } from "react-icons/io5";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <>
@@ -31,7 +31,7 @@ const Navbar = () => {
 
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="#">Articles</a>
+                        <Link to="/about" className="nav-link" href="#">About</Link>
                         </li>
                         
                         <li className="nav-item">
